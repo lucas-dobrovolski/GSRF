@@ -2,6 +2,9 @@
 
 int main(int argc, char** argv)
 {
-    GSRF app(argc, argv);
-    return app.run();
+    GSRF core(argc, argv);
+    bool state = core.rute1();
+    std::cout << state; 
+
+    return 0;
 }
