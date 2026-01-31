@@ -2,9 +2,8 @@
 
 int main(int argc, char** argv)
 {
-    GSRF core(argc, argv);
-    bool state = core.rute1();
-    std::cout << state; 
-
+    GSRF instance(argc, argv);
+    instance.defaultRun();
+    std::cout << "end\n"; 
     return 0;
 }
